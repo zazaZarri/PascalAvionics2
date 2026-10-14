@@ -1,14 +1,15 @@
-# monitoraggio.py
+# Aggiunta dei dati e della funzione riepilogo
 
-# Costante concordata per la soglia di ore di volo
-SOGLIA_ORE = 1000
 
-# Lista iniziale degli aeromobili (ampliata a 4 elementi come richiesto)
+
+
 aeromobili = [
     {"codice": "I-ABC", "modello": "A320", "ore_volo": 1240, "controlli_ok": True},
     {"codice": "I-XYZ", "modello": "B737", "ore_volo": 850, "controlli_ok": False},
+    {"codice": "I-TEST", "modello": "ATR72", "ore_volo": 1100, "controlli_ok": False},
+    {"codice": "I-DEMO", "modello": "A350", "ore_volo": 450, "controlli_ok": True}
 ]
 
-
-
-    
+def stampa_riepilogo(lista_aeromobili):
+    for a in lista_aeromobili:
+        print(f"- Codice: {a['codice']} | Modello: {a['modello']} | Ore: {a['ore_volo']}")
