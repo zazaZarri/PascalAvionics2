@@ -6,6 +6,8 @@ aeromobili = [
 ]
 
 def stampa_riepilogo(lista_aeromobili):
+    if not lista_aeromobili:
+        print("Riepilogo aeromobili:")
     for a in lista_aeromobili:
         print(f"- Codice: {a['codice']} | Modello: {a['modello']} | Ore: {a['ore_volo']}")
         
