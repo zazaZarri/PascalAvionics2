@@ -1,13 +1,5 @@
-# monitoraggio.py
-
-# Costante concordata per la soglia di ore di volo
-SOGLIA_ORE = 1000
-
-# Lista iniziale degli aeromobili (ampliata a 4 elementi come richiesto)
-aeromobili = [
-    {"codice": "I-ABC", "modello": "A320", "ore_volo": 1240, "controlli_ok": True},
-    {"codice": "I-XYZ", "modello": "B737", "ore_volo": 850, "controlli_ok": False},
-]
+def filtra_controlli_non_validi(lista_aeromobili):
+    return [a for a in lista_aeromobili if not a["controlli_ok"]]
 
 
 
