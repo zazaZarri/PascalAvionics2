@@ -9,3 +9,7 @@ aeromobili = [
     {"codice": "I-TEST", "modello": "ATR72", "ore_volo": 1100, "controlli_ok": False},
     {"codice": "I-DEMO", "modello": "A350", "ore_volo": 450, "controlli_ok": True}
 ]
+
+def stampa_riepilogo(lista_aeromobili):
+    for a in lista_aeromobili:
+        print(f"- Codice: {a['codice']} | Modello: {a['modello']} | Ore: {a['ore_volo']}")
